@@ -6,15 +6,15 @@ import Link from 'next/link'
 
 export default function Header() {
   return (
-    <div className="flex justify-between items-center m-5">
+    <div className="flex justify-between items-center  my-7 sm:mx-auto max-w-5xl mx-3">
         <div className="flex ">
             <div className=" hover:text-amber-600">
                 <Menuitems title="HOME" address= "/" Icon={AiFillHome}/>
 
             </div>
 
-            <div className="hover:text-amber-600">
-                <Menuitems title="About" address= "/about" Icon={AiFillInfoCircle}/>
+            <div className="hover:text-amber-600 mx-5">
+                <Menuitems title="ABOUT" address= "/about" Icon={AiFillInfoCircle}/>
 
             </div>
 

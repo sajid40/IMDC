@@ -1,5 +1,6 @@
 import Header from '@/components/Header/Header'
 import './globals.css'
+import Navbar from '@/components/Navbar/Navbar'
 
 export const metadata = {
   title: 'IMDC',
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
       <body>
 
         <Header/>
+        <Navbar/>
         
         
         {children}</body>

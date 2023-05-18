@@ -1,9 +1,9 @@
-import { Result } from "postcss";
+import Results from "@/components/Results/Results";
 
 const API_KEY = process.env.API_KEY
 export default async function  Home({searchParams}) {
   const genre = searchParams.genre|| "fetchTrending";
-  const res = await fetch(
+  const res = await  fetch(
     `http://api.themoviedb.org/3/${
       genre==="fetchTopRated" ? "movie/top_rated" : "trending/all/week"
 
@@ -17,11 +17,15 @@ export default async function  Home({searchParams}) {
 
    const data = await res.json();
 
-   const results = data.results;
+   const results =  data.results;
 
-  
+   //console.log(results);
+
+ 
 
   return (
-   <div><Result results={results}/></div>
+   <div>
+    <Results results={results} />
+   </div>
   )
 }

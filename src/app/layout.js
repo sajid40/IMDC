@@ -1,6 +1,7 @@
 import Header from '@/components/Header/Header'
 import './globals.css'
 import Navbar from '@/components/Navbar/Navbar'
+import Searchbox from '@/components/Searchbox/Searchbox'
 
 export const metadata = {
   title: 'IMDC',
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
 
         <Header/>
         <Navbar/>
+        <Searchbox/>
         
         
         {children}</body>
